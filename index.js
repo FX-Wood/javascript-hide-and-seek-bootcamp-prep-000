@@ -19,8 +19,8 @@ function increaseRankBy(n)  {
     let childItems = domLists[listIndex].children
     for (let childIndex = 0; childIndex < childItems.length; childIndex++) {
       console.log('secondloop')
-      let current = childItems[childIndex].innertext;
-      childItems[childIndex].innertext = parseInt(current) + n
+      let current = childItems[childIndex].innerText;
+      childItems[childIndex].innerText = parseInt(current) + n
     }
   }
 }
