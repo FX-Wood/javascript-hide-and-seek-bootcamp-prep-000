@@ -14,8 +14,12 @@ function deepestChild() {
 
 function increaseRankBy(n)  {
   const FirstRankedList = document.querySelector('ul.ranked-list')
-  for (i = FirstRankedList.childElementCount; i < n; i++) {
+  const FirstRankedListInitLength = FirstRankedList.childElementCount
+  for (i = FirstRankedListInitLength; i < n+FirstRankedListInitLength; i++) {
     const newLi = document.createElement("li");
     const newLiText = document.createTextNode(`${i}`)
+    newLi.appendChild(newLiText);
+    FirstRankedList.appendChild(newLi)
+    
   }
 }
