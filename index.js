@@ -13,12 +13,12 @@ function deepestChild() {
 }
 
 function increaseRankBy(n)  {
-  const FirstRankedList = document.querySelector('ul.ranked-list')
-  const FirstRankedListInitLength = FirstRankedList.childElementCount
-  for (let i = FirstRankedListInitLength + 1; i < n+FirstRankedListInitLength+1; i++) {
-    const newLi = document.createElement("li");
-    const newLiText = document.createTextNode(`${i}`)
-    newLi.appendChild(newLiText);
-    FirstRankedList.appendChild(newLi)
+  const domLists = document.querySelectorAll('ul.ranked-list');
+  for (let listIndex = 0; listIndex < domLists.length; listIndex++) {
+    let childItems = domLists[listIndex].children
+    for (let childIndex = 0; childIndex < childItems.length; childIndex++) {
+      let current = childItems[childIndex].innertext;
+      current = tString(parseInt(current) + n)
+    }
   }
 }
