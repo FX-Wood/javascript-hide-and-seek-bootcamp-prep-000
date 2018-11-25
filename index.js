@@ -18,7 +18,7 @@ function increaseRankBy(n)  {
     let childItems = domLists[listIndex].children
     for (let childIndex = 0; childIndex < childItems.length; childIndex++) {
       let current = childItems[childIndex].innertext;
-      current = tString(parseInt(current) + n)
+      current = toString(parseInt(current) + n)
     }
   }
 }
