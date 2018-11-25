@@ -7,9 +7,14 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  let grandNode = document.getElementById("grand-node");
-  let grandNodeChildren = grandNode.querySelectorAll("*");
+  const grandNode = document.getElementById("grand-node");
+  const grandNodeChildren = grandNode.querySelectorAll("*");
   return grandNodeChildren[grandNodeChildren.length-1]
 }
 
-function increaseRankBy
+function increaseRankBy(n)  {
+  const FirstRankedList = document.querySelector('ul.ranked-list')
+  for (i = 0; i < n+FirstRankedList.childElementCount; i++) {
+    if
+  }
+}
