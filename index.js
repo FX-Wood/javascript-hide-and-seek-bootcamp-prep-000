@@ -20,7 +20,7 @@ function increaseRankBy(n)  {
     for (let childIndex = 0; childIndex < childItems.length; childIndex++) {
       console.log('secondloop')
       let current = childItems[childIndex].innerText;
-      childItems[childIndex].innerText = toString(parseInt(current) + n)
+      childItems[childIndex].innerText = toString(parseInt(current) + 3)
     }
   }
 }
